@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6AAC46911B79D26E00455B0A /* NSDate+iCal.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC46901B79D26E00455B0A /* NSDate+iCal.m */; };
+		6AF884351B78AC5700433B73 /* NSArray+iCal.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF884341B78AC5700433B73 /* NSArray+iCal.m */; };
+		B537D2801B842DC90008BA11 /* zoneinfo in Resources */ = {isa = PBXBuildFile; fileRef = B537D27F1B842DC90008BA11 /* zoneinfo */; };
+		B565E7A81B90691000243FD7 /* WCLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = B565E7A71B90691000243FD7 /* WCLocation.m */; };
+		B59BB9111B788493006B294E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B59BB9101B788493006B294E /* main.m */; };
+		B59BB9141B788493006B294E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B59BB9131B788493006B294E /* AppDelegate.m */; };
+		B59BB9171B788493006B294E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B59BB9161B788493006B294E /* ViewController.m */; };
+		B59BB91A1B788493006B294E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59BB9181B788493006B294E /* Main.storyboard */; };
+		B59BB91C1B788493006B294E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B59BB91B1B788493006B294E /* Images.xcassets */; };
+		B59BB91F1B788493006B294E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59BB91D1B788493006B294E /* LaunchScreen.xib */; };
+		B59BB92B1B788493006B294E /* WeCalICSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B59BB92A1B788493006B294E /* WeCalICSTests.m */; };
+		B59BBEB01B78850E006B294E /* libical.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B59BBCD01B78850D006B294E /* libical.a */; };
+		B59BBEB11B78850E006B294E /* build.sh in Resources */ = {isa = PBXBuildFile; fileRef = B59BBCD21B78850D006B294E /* build.sh */; };
+		B59BBEB21B78850E006B294E /* libical_make.sh in Resources */ = {isa = PBXBuildFile; fileRef = B59BBCD31B78850D006B294E /* libical_make.sh */; };
+		B59BC0601B78850E006B294E /* WCCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = B59BBE961B78850E006B294E /* WCCalendar.m */; };
+		B59BC0611B78850E006B294E /* WCComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B59BBE981B78850E006B294E /* WCComponent.m */; };
+		B59BC0621B78850E006B294E /* WCEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B59BBE9A1B78850E006B294E /* WCEvent.m */; };
+		B59BC0631B78850E006B294E /* WCFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B59BBE9C1B78850E006B294E /* WCFile.m */; };
+		B59BC0641B78850E006B294E /* WCInvite.m in Sources */ = {isa = PBXBuildFile; fileRef = B59BBE9F1B78850E006B294E /* WCInvite.m */; };
+		B59BC0651B78850E006B294E /* WCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B59BBEA11B78850E006B294E /* WCPerson.m */; };
+		B59BC0661B78850E006B294E /* WCProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B59BBEA31B78850E006B294E /* WCProperty.m */; };
+		B59BC0671B78850E006B294E /* WCRecurrenceDayOfWeek.m in Sources */ = {isa = PBXBuildFile; fileRef = B59BBEA51B78850E006B294E /* WCRecurrenceDayOfWeek.m */; };
+		B59BC0681B78850E006B294E /* WCRecurrenceEnd.m in Sources */ = {isa = PBXBuildFile; fileRef = B59BBEA71B78850E006B294E /* WCRecurrenceEnd.m */; };
+		B59BC0691B78850E006B294E /* WCRecurrenceRule.m in Sources */ = {isa = PBXBuildFile; fileRef = B59BBEA91B78850E006B294E /* WCRecurrenceRule.m */; };
+		B59BC06A1B78850E006B294E /* WCZoneDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = B59BBEAB1B78850E006B294E /* WCZoneDirectory.m */; };
+		B59BC06B1B78850E006B294E /* WCCalMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = B59BBEAD1B78850E006B294E /* WCCalMaker.m */; };
+		B59BC06C1B78850E006B294E /* WCCalHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B59BBEAF1B78850E006B294E /* WCCalHelper.m */; };
+		B59BC06F1B788700006B294E /* 1.ics in Resources */ = {isa = PBXBuildFile; fileRef = B59BC06E1B788700006B294E /* 1.ics */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B59BB9251B788493006B294E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B59BB9031B788493006B294E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B59BB90A1B788493006B294E;
+			remoteInfo = WeCalICS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6AAC468F1B79D26E00455B0A /* NSDate+iCal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+iCal.h"; sourceTree = "<group>"; };
+		6AAC46901B79D26E00455B0A /* NSDate+iCal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+iCal.m"; sourceTree = "<group>"; };
+		6AF884331B78AC5700433B73 /* NSArray+iCal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+iCal.h"; sourceTree = "<group>"; };
+		6AF884341B78AC5700433B73 /* NSArray+iCal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+iCal.m"; sourceTree = "<group>"; };
+		6AF884361B78C24800433B73 /* WCDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCDefine.h; sourceTree = "<group>"; };
+		B537D27F1B842DC90008BA11 /* zoneinfo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = zoneinfo; sourceTree = "<group>"; };
+		B537D2811B8466EF0008BA11 /* libical_ical_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libical_ical_export.h; sourceTree = "<group>"; };
+		B565E7A61B90691000243FD7 /* WCLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLocation.h; sourceTree = "<group>"; };
+		B565E7A71B90691000243FD7 /* WCLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLocation.m; sourceTree = "<group>"; };
+		B59BB90B1B788493006B294E /* WeCalICS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeCalICS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B59BB90F1B788493006B294E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B59BB9101B788493006B294E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B59BB9121B788493006B294E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B59BB9131B788493006B294E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B59BB9151B788493006B294E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B59BB9161B788493006B294E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B59BB9191B788493006B294E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B59BB91B1B788493006B294E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B59BB91E1B788493006B294E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B59BB9241B788493006B294E /* WeCalICSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeCalICSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B59BB9291B788493006B294E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B59BB92A1B788493006B294E /* WeCalICSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeCalICSTests.m; sourceTree = "<group>"; };
+		B59BBCD01B78850D006B294E /* libical.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libical.a; sourceTree = "<group>"; };
+		B59BBCD21B78850D006B294E /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		B59BBCD31B78850D006B294E /* libical_make.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = libical_make.sh; sourceTree = "<group>"; };
+		B59BBCD61B78850D006B294E /* ical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ical.h; sourceTree = "<group>"; };
+		B59BBE941B78850E006B294E /* WCCal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCal.h; sourceTree = "<group>"; };
+		B59BBE951B78850E006B294E /* WCCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCalendar.h; sourceTree = "<group>"; };
+		B59BBE961B78850E006B294E /* WCCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCalendar.m; sourceTree = "<group>"; };
+		B59BBE971B78850E006B294E /* WCComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCComponent.h; sourceTree = "<group>"; };
+		B59BBE981B78850E006B294E /* WCComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCComponent.m; sourceTree = "<group>"; };
+		B59BBE991B78850E006B294E /* WCEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCEvent.h; sourceTree = "<group>"; };
+		B59BBE9A1B78850E006B294E /* WCEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCEvent.m; sourceTree = "<group>"; };
+		B59BBE9B1B78850E006B294E /* WCFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFile.h; sourceTree = "<group>"; };
+		B59BBE9C1B78850E006B294E /* WCFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFile.m; sourceTree = "<group>"; };
+		B59BBE9E1B78850E006B294E /* WCInvite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCInvite.h; sourceTree = "<group>"; };
+		B59BBE9F1B78850E006B294E /* WCInvite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCInvite.m; sourceTree = "<group>"; };
+		B59BBEA01B78850E006B294E /* WCPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPerson.h; sourceTree = "<group>"; };
+		B59BBEA11B78850E006B294E /* WCPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPerson.m; sourceTree = "<group>"; };
+		B59BBEA21B78850E006B294E /* WCProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCProperty.h; sourceTree = "<group>"; };
+		B59BBEA31B78850E006B294E /* WCProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCProperty.m; sourceTree = "<group>"; };
+		B59BBEA41B78850E006B294E /* WCRecurrenceDayOfWeek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCRecurrenceDayOfWeek.h; sourceTree = "<group>"; };
+		B59BBEA51B78850E006B294E /* WCRecurrenceDayOfWeek.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCRecurrenceDayOfWeek.m; sourceTree = "<group>"; };
+		B59BBEA61B78850E006B294E /* WCRecurrenceEnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCRecurrenceEnd.h; sourceTree = "<group>"; };
+		B59BBEA71B78850E006B294E /* WCRecurrenceEnd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCRecurrenceEnd.m; sourceTree = "<group>"; };
+		B59BBEA81B78850E006B294E /* WCRecurrenceRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCRecurrenceRule.h; sourceTree = "<group>"; };
+		B59BBEA91B78850E006B294E /* WCRecurrenceRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCRecurrenceRule.m; sourceTree = "<group>"; };
+		B59BBEAA1B78850E006B294E /* WCZoneDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCZoneDirectory.h; sourceTree = "<group>"; };
+		B59BBEAB1B78850E006B294E /* WCZoneDirectory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCZoneDirectory.m; sourceTree = "<group>"; };
+		B59BBEAC1B78850E006B294E /* WCCalMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCalMaker.h; sourceTree = "<group>"; };
+		B59BBEAD1B78850E006B294E /* WCCalMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCalMaker.m; sourceTree = "<group>"; };
+		B59BBEAE1B78850E006B294E /* WCCalHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCalHelper.h; sourceTree = "<group>"; };
+		B59BBEAF1B78850E006B294E /* WCCalHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCalHelper.m; sourceTree = "<group>"; };
+		B59BC06E1B788700006B294E /* 1.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.ics; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B59BB9081B788493006B294E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59BBEB01B78850E006B294E /* libical.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B59BB9211B788493006B294E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B59BB9021B788493006B294E = {
+			isa = PBXGroup;
+			children = (
+				B59BB90D1B788493006B294E /* WeCalICS */,
+				B59BB9271B788493006B294E /* WeCalICSTests */,
+				B59BB90C1B788493006B294E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B59BB90C1B788493006B294E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B59BB90B1B788493006B294E /* WeCalICS.app */,
+				B59BB9241B788493006B294E /* WeCalICSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B59BB90D1B788493006B294E /* WeCalICS */ = {
+			isa = PBXGroup;
+			children = (
+				B59BC06E1B788700006B294E /* 1.ics */,
+				B59BBCCD1B78850D006B294E /* Sources */,
+				B59BB9121B788493006B294E /* AppDelegate.h */,
+				B59BB9131B788493006B294E /* AppDelegate.m */,
+				B59BB9151B788493006B294E /* ViewController.h */,
+				B59BB9161B788493006B294E /* ViewController.m */,
+				B59BB9181B788493006B294E /* Main.storyboard */,
+				B59BB91B1B788493006B294E /* Images.xcassets */,
+				B59BB91D1B788493006B294E /* LaunchScreen.xib */,
+				B59BB90E1B788493006B294E /* Supporting Files */,
+			);
+			path = WeCalICS;
+			sourceTree = "<group>";
+		};
+		B59BB90E1B788493006B294E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B59BB90F1B788493006B294E /* Info.plist */,
+				B59BB9101B788493006B294E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B59BB9271B788493006B294E /* WeCalICSTests */ = {
+			isa = PBXGroup;
+			children = (
+				B59BB92A1B788493006B294E /* WeCalICSTests.m */,
+				B59BB9281B788493006B294E /* Supporting Files */,
+			);
+			path = WeCalICSTests;
+			sourceTree = "<group>";
+		};
+		B59BB9281B788493006B294E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B59BB9291B788493006B294E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B59BBCCD1B78850D006B294E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B59BBCCE1B78850D006B294E /* libical */,
+				B59BBE931B78850E006B294E /* WCCalendar */,
+				B59BBEAE1B78850E006B294E /* WCCalHelper.h */,
+				B59BBEAF1B78850E006B294E /* WCCalHelper.m */,
+				B59BBEAC1B78850E006B294E /* WCCalMaker.h */,
+				B59BBEAD1B78850E006B294E /* WCCalMaker.m */,
+				6AF884331B78AC5700433B73 /* NSArray+iCal.h */,
+				6AF884341B78AC5700433B73 /* NSArray+iCal.m */,
+				6AAC468F1B79D26E00455B0A /* NSDate+iCal.h */,
+				6AAC46901B79D26E00455B0A /* NSDate+iCal.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B59BBCCE1B78850D006B294E /* libical */ = {
+			isa = PBXGroup;
+			children = (
+				B537D27F1B842DC90008BA11 /* zoneinfo */,
+				B59BBCCF1B78850D006B294E /* lib */,
+				B59BBCD11B78850D006B294E /* scripts */,
+				B59BBCD41B78850D006B294E /* src */,
+			);
+			path = libical;
+			sourceTree = "<group>";
+		};
+		B59BBCCF1B78850D006B294E /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				B59BBCD01B78850D006B294E /* libical.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		B59BBCD11B78850D006B294E /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				B59BBCD21B78850D006B294E /* build.sh */,
+				B59BBCD31B78850D006B294E /* libical_make.sh */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		B59BBCD41B78850D006B294E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B59BBCD51B78850D006B294E /* include */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B59BBCD51B78850D006B294E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B537D2811B8466EF0008BA11 /* libical_ical_export.h */,
+				B59BBCD61B78850D006B294E /* ical.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B59BBE931B78850E006B294E /* WCCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				B59BBE941B78850E006B294E /* WCCal.h */,
+				B565E7A61B90691000243FD7 /* WCLocation.h */,
+				B565E7A71B90691000243FD7 /* WCLocation.m */,
+				6AF884361B78C24800433B73 /* WCDefine.h */,
+				B59BBE951B78850E006B294E /* WCCalendar.h */,
+				B59BBE961B78850E006B294E /* WCCalendar.m */,
+				B59BBE971B78850E006B294E /* WCComponent.h */,
+				B59BBE981B78850E006B294E /* WCComponent.m */,
+				B59BBE991B78850E006B294E /* WCEvent.h */,
+				B59BBE9A1B78850E006B294E /* WCEvent.m */,
+				B59BBE9B1B78850E006B294E /* WCFile.h */,
+				B59BBE9C1B78850E006B294E /* WCFile.m */,
+				B59BBE9E1B78850E006B294E /* WCInvite.h */,
+				B59BBE9F1B78850E006B294E /* WCInvite.m */,
+				B59BBEA01B78850E006B294E /* WCPerson.h */,
+				B59BBEA11B78850E006B294E /* WCPerson.m */,
+				B59BBEA21B78850E006B294E /* WCProperty.h */,
+				B59BBEA31B78850E006B294E /* WCProperty.m */,
+				B59BBEA41B78850E006B294E /* WCRecurrenceDayOfWeek.h */,
+				B59BBEA51B78850E006B294E /* WCRecurrenceDayOfWeek.m */,
+				B59BBEA61B78850E006B294E /* WCRecurrenceEnd.h */,
+				B59BBEA71B78850E006B294E /* WCRecurrenceEnd.m */,
+				B59BBEA81B78850E006B294E /* WCRecurrenceRule.h */,
+				B59BBEA91B78850E006B294E /* WCRecurrenceRule.m */,
+				B59BBEAA1B78850E006B294E /* WCZoneDirectory.h */,
+				B59BBEAB1B78850E006B294E /* WCZoneDirectory.m */,
+			);
+			path = WCCalendar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B59BB90A1B788493006B294E /* WeCalICS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B59BB92E1B788493006B294E /* Build configuration list for PBXNativeTarget "WeCalICS" */;
+			buildPhases = (
+				B59BB9071B788493006B294E /* Sources */,
+				B59BB9081B788493006B294E /* Frameworks */,
+				B59BB9091B788493006B294E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeCalICS;
+			productName = WeCalICS;
+			productReference = B59BB90B1B788493006B294E /* WeCalICS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B59BB9231B788493006B294E /* WeCalICSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B59BB9311B788493006B294E /* Build configuration list for PBXNativeTarget "WeCalICSTests" */;
+			buildPhases = (
+				B59BB9201B788493006B294E /* Sources */,
+				B59BB9211B788493006B294E /* Frameworks */,
+				B59BB9221B788493006B294E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B59BB9261B788493006B294E /* PBXTargetDependency */,
+			);
+			name = WeCalICSTests;
+			productName = WeCalICSTests;
+			productReference = B59BB9241B788493006B294E /* WeCalICSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B59BB9031B788493006B294E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "ZhiPeng Ben";
+				TargetAttributes = {
+					B59BB90A1B788493006B294E = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					B59BB9231B788493006B294E = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = B59BB90A1B788493006B294E;
+					};
+				};
+			};
+			buildConfigurationList = B59BB9061B788493006B294E /* Build configuration list for PBXProject "WeCalICS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B59BB9021B788493006B294E;
+			productRefGroup = B59BB90C1B788493006B294E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B59BB90A1B788493006B294E /* WeCalICS */,
+				B59BB9231B788493006B294E /* WeCalICSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B59BB9091B788493006B294E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59BC06F1B788700006B294E /* 1.ics in Resources */,
+				B537D2801B842DC90008BA11 /* zoneinfo in Resources */,
+				B59BBEB21B78850E006B294E /* libical_make.sh in Resources */,
+				B59BB91A1B788493006B294E /* Main.storyboard in Resources */,
+				B59BBEB11B78850E006B294E /* build.sh in Resources */,
+				B59BB91F1B788493006B294E /* LaunchScreen.xib in Resources */,
+				B59BB91C1B788493006B294E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B59BB9221B788493006B294E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B59BB9071B788493006B294E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59BC0661B78850E006B294E /* WCProperty.m in Sources */,
+				B59BB9171B788493006B294E /* ViewController.m in Sources */,
+				B59BC0611B78850E006B294E /* WCComponent.m in Sources */,
+				B59BB9141B788493006B294E /* AppDelegate.m in Sources */,
+				B59BC0671B78850E006B294E /* WCRecurrenceDayOfWeek.m in Sources */,
+				B59BB9111B788493006B294E /* main.m in Sources */,
+				B59BC0631B78850E006B294E /* WCFile.m in Sources */,
+				B59BC0621B78850E006B294E /* WCEvent.m in Sources */,
+				B59BC06B1B78850E006B294E /* WCCalMaker.m in Sources */,
+				6AF884351B78AC5700433B73 /* NSArray+iCal.m in Sources */,
+				6AAC46911B79D26E00455B0A /* NSDate+iCal.m in Sources */,
+				B59BC0691B78850E006B294E /* WCRecurrenceRule.m in Sources */,
+				B59BC06A1B78850E006B294E /* WCZoneDirectory.m in Sources */,
+				B59BC0641B78850E006B294E /* WCInvite.m in Sources */,
+				B59BC06C1B78850E006B294E /* WCCalHelper.m in Sources */,
+				B59BC0651B78850E006B294E /* WCPerson.m in Sources */,
+				B59BC0601B78850E006B294E /* WCCalendar.m in Sources */,
+				B565E7A81B90691000243FD7 /* WCLocation.m in Sources */,
+				B59BC0681B78850E006B294E /* WCRecurrenceEnd.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B59BB9201B788493006B294E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59BB92B1B788493006B294E /* WeCalICSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B59BB9261B788493006B294E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B59BB90A1B788493006B294E /* WeCalICS */;
+			targetProxy = B59BB9251B788493006B294E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B59BB9181B788493006B294E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B59BB9191B788493006B294E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B59BB91D1B788493006B294E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B59BB91E1B788493006B294E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B59BB92C1B788493006B294E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B59BB92D1B788493006B294E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B59BB92F1B788493006B294E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WeCalICS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeCalICS/Sources/libical/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B59BB9301B788493006B294E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WeCalICS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeCalICS/Sources/libical/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B59BB9321B788493006B294E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WeCalICSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeCalICS.app/WeCalICS";
+			};
+			name = Debug;
+		};
+		B59BB9331B788493006B294E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WeCalICSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeCalICS.app/WeCalICS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B59BB9061B788493006B294E /* Build configuration list for PBXProject "WeCalICS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B59BB92C1B788493006B294E /* Debug */,
+				B59BB92D1B788493006B294E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B59BB92E1B788493006B294E /* Build configuration list for PBXNativeTarget "WeCalICS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B59BB92F1B788493006B294E /* Debug */,
+				B59BB9301B788493006B294E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B59BB9311B788493006B294E /* Build configuration list for PBXNativeTarget "WeCalICSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B59BB9321B788493006B294E /* Debug */,
+				B59BB9331B788493006B294E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B59BB9031B788493006B294E /* Project object */;
+}
