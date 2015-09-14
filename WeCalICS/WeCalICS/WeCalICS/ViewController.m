@@ -37,7 +37,8 @@
 //
     [WCCalendar calendarParaser:ss events:^(NSArray *events) {
         WCEvent* event = events.firstObject;
-        NSLog(@"%@",@"111");
+        NSLog(@"%@",event.summary);
+        NSLog(@"%@",@"解析结束");
     }];
 //
 //    
