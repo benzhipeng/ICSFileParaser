@@ -1,4 +1,4 @@
-# WeCalICS For iOS
+# ICSFileParaser For iOS
 
 ics文件的解析和封装
 
